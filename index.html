@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main-style.css" />
+    <script defer src="main-script.js"></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main class="main main--theme1">
+      <div class="main-container">
+        <div class="float-num float-num--theme1">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+        <header class="header">
+          <p class="calc-title calc-title--theme1">calc</p>
+          <p class="theme-title theme-title--theme1">theme</p>
+          <div class="theme-panel">
+            <div class="theme-bar theme-bar--theme1">
+              <button class="circle-theme circle-theme--theme1"></button>
+              <div class="btn-event" data-theme="1"></div>
+              <div class="btn-event" data-theme="2"></div>
+              <div class="btn-event" data-theme="3"></div>
+            </div>
+          </div>
+        </header>
+        <input type="text" class="main-screen main-screen--theme1" />
+        <div class="btn-container btn-container--theme1">
+          <button class="btn btn-plain btn-plain--theme1">7</button>
+          <button class="btn btn-plain btn-plain--theme1">8</button>
+          <button class="btn btn-plain btn-plain--theme1">9</button>
+          <button class="btn btn-del btn-rst-del btn-rst-del--theme1">
+            del
+          </button>
+          <button class="btn btn-plain btn-plain--theme1">4</button>
+          <button class="btn btn-plain btn-plain--theme1">5</button>
+          <button class="btn btn-plain btn-plain--theme1">6</button>
+          <button class="btn btn-plain btn-plain--theme1">+</button>
+          <button class="btn btn-plain btn-plain--theme1">1</button>
+          <button class="btn btn-plain btn-plain--theme1">2</button>
+          <button class="btn btn-plain btn-plain--theme1">3</button>
+          <button class="btn btn-plain btn-plain--theme1">-</button>
+          <button class="btn btn-plain btn-plain--theme1">.</button>
+          <button class="btn btn-plain btn-plain--theme1">0</button>
+          <button class="btn btn-plain btn-plain--theme1">/</button>
+          <button class="btn btn-plain btn-plain--theme1">*</button>
+          <button class="btn btn-rst btn-rst-del btn-rst-del--theme1">
+            reset
+          </button>
+          <button class="btn btn-eqal btn-eqal--theme1">=</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/monasr1997/">Mohamed Nasr</a>.
+      </div>
+    </main>
+  </body>
+</html>
