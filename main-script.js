@@ -25,6 +25,16 @@ mainContainer.addEventListener('click', function (e) {
   }
 });
 
+screen.addEventListener('keydown', function (e) {
+  if (e.code === 'Enter') {
+    try {
+      screen.value = evil(screen.value);
+    } catch (SyntaxError) {
+      alert('Malformed expression');
+    }
+  }
+});
+
 // Themes
 // // 1)Variable
 const themePanal = document.querySelector('.theme-panel');
