@@ -27,7 +27,7 @@
 
 .main-container {
   height: 80vh;
-  width: 50vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -131,15 +131,15 @@
 
 .circle-theme--theme1 {
   background-color: hsl(6, 70%, 34%);
-  translate: 0%;
+  transform: translateX(0%);
 }
 .circle-theme--theme2 {
   background-color: hsl(25, 98%, 40%);
-  translate: 140%;
+  transform: translateX(140%);
 }
 .circle-theme--theme3 {
   background-color: hsl(176, 100%, 44%);
-  translate: 290%;
+  transform: translateX(290%);
 }
 
 .main-screen {
