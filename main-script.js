@@ -17,7 +17,7 @@ mainContainer.addEventListener('click', function (e) {
   } else if (e.target.classList.contains('btn-eqal')) {
     try {
       screen.value = evil(screen.value);
-    } catch (SyntaxError) {
+    } catch {
       alert('Malformed expression');
     }
   } else if (e.target.tagName === 'BUTTON') {
@@ -29,7 +29,7 @@ screen.addEventListener('keydown', function (e) {
   if (e.code === 'Enter') {
     try {
       screen.value = evil(screen.value);
-    } catch (SyntaxError) {
+    } catch (err) {
       alert('Malformed expression');
     }
   }
@@ -50,66 +50,60 @@ const btnPlain = document.querySelectorAll('.btn-plain'); //btn-plain--theme1
 const btnRstDel = document.querySelectorAll('.btn-rst-del'); //btn-rst-del--theme1
 const btnEqal = [document.querySelector('.btn-eqal')]; //btn-eqal--theme1
 
-const theme1Fun = function (el, theme) {
-  el.forEach(el => el.classList.remove(`${theme}${2}`));
-  el.forEach(el => el.classList.remove(`${theme}${3}`));
-  el.forEach(el => el.classList.add(`${theme}${1}`));
+const themeFun = function (el, theme, e) {
+  const data = e.target.dataset.theme;
+  const arr = ['1', '2', '3'];
+  arr.splice(+data - 1, 1);
+  el.forEach(el => el.classList.remove(`${theme}${arr[0]}`));
+  el.forEach(el => el.classList.remove(`${theme}${arr[1]}`));
+  el.forEach(el => el.classList.add(`${theme}${data}`));
 };
-const theme2Fun = function (el, theme) {
-  el.forEach(el => el.classList.remove(`${theme}${1}`));
-  el.forEach(el => el.classList.remove(`${theme}${3}`));
-  el.forEach(el => el.classList.add(`${theme}${2}`));
-};
-const theme3Fun = function (el, theme) {
-  el.forEach(el => el.classList.remove(`${theme}${1}`));
-  el.forEach(el => el.classList.remove(`${theme}${2}`));
-  el.forEach(el => el.classList.add(`${theme}${3}`));
-};
+
 themePanal.addEventListener('click', function (e) {
   // // 2)Events
 
   // BTN 1
   if (e.target.dataset.theme === '1') {
-    theme1Fun(mainPage, 'main--theme');
-    theme1Fun(floatNum, 'float-num--theme');
-    theme1Fun(calcTitle, 'calc-title--theme');
-    theme1Fun(themeTitle, 'theme-title--theme');
-    theme1Fun(themeBar, 'theme-bar--theme');
-    theme1Fun(circleTheme, 'circle-theme--theme');
-    theme1Fun(mainScreen, 'main-screen--theme');
-    theme1Fun(btnContainer, 'btn-container--theme');
-    theme1Fun(btnPlain, 'btn-plain--theme');
-    theme1Fun(btnRstDel, 'btn-rst-del--theme');
-    theme1Fun(btnEqal, 'btn-eqal--theme');
+    themeFun(mainPage, 'main--theme', e);
+    themeFun(floatNum, 'float-num--theme', e);
+    themeFun(calcTitle, 'calc-title--theme', e);
+    themeFun(themeTitle, 'theme-title--theme', e);
+    themeFun(themeBar, 'theme-bar--theme', e);
+    themeFun(circleTheme, 'circle-theme--theme', e);
+    themeFun(mainScreen, 'main-screen--theme', e);
+    themeFun(btnContainer, 'btn-container--theme', e);
+    themeFun(btnPlain, 'btn-plain--theme', e);
+    themeFun(btnRstDel, 'btn-rst-del--theme', e);
+    themeFun(btnEqal, 'btn-eqal--theme', e);
   }
 
   // BTN 2
   if (e.target.dataset.theme === '2') {
-    theme2Fun(mainPage, 'main--theme');
-    theme2Fun(floatNum, 'float-num--theme');
-    theme2Fun(calcTitle, 'calc-title--theme');
-    theme2Fun(themeTitle, 'theme-title--theme');
-    theme2Fun(themeBar, 'theme-bar--theme');
-    theme2Fun(circleTheme, 'circle-theme--theme');
-    theme2Fun(mainScreen, 'main-screen--theme');
-    theme2Fun(btnContainer, 'btn-container--theme');
-    theme2Fun(btnPlain, 'btn-plain--theme');
-    theme2Fun(btnRstDel, 'btn-rst-del--theme');
-    theme2Fun(btnEqal, 'btn-eqal--theme');
+    themeFun(mainPage, 'main--theme', e);
+    themeFun(floatNum, 'float-num--theme', e);
+    themeFun(calcTitle, 'calc-title--theme', e);
+    themeFun(themeTitle, 'theme-title--theme', e);
+    themeFun(themeBar, 'theme-bar--theme', e);
+    themeFun(circleTheme, 'circle-theme--theme', e);
+    themeFun(mainScreen, 'main-screen--theme', e);
+    themeFun(btnContainer, 'btn-container--theme', e);
+    themeFun(btnPlain, 'btn-plain--theme', e);
+    themeFun(btnRstDel, 'btn-rst-del--theme', e);
+    themeFun(btnEqal, 'btn-eqal--theme', e);
   }
 
   // BTN 3
   if (e.target.dataset.theme === '3') {
-    theme3Fun(mainPage, 'main--theme');
-    theme3Fun(floatNum, 'float-num--theme');
-    theme3Fun(calcTitle, 'calc-title--theme');
-    theme3Fun(themeTitle, 'theme-title--theme');
-    theme3Fun(themeBar, 'theme-bar--theme');
-    theme3Fun(circleTheme, 'circle-theme--theme');
-    theme3Fun(mainScreen, 'main-screen--theme');
-    theme3Fun(btnContainer, 'btn-container--theme');
-    theme3Fun(btnPlain, 'btn-plain--theme');
-    theme3Fun(btnRstDel, 'btn-rst-del--theme');
-    theme3Fun(btnEqal, 'btn-eqal--theme');
+    themeFun(mainPage, 'main--theme', e);
+    themeFun(floatNum, 'float-num--theme', e);
+    themeFun(calcTitle, 'calc-title--theme', e);
+    themeFun(themeTitle, 'theme-title--theme', e);
+    themeFun(themeBar, 'theme-bar--theme', e);
+    themeFun(circleTheme, 'circle-theme--theme', e);
+    themeFun(mainScreen, 'main-screen--theme', e);
+    themeFun(btnContainer, 'btn-container--theme', e);
+    themeFun(btnPlain, 'btn-plain--theme', e);
+    themeFun(btnRstDel, 'btn-rst-del--theme', e);
+    themeFun(btnEqal, 'btn-eqal--theme', e);
   }
 });
