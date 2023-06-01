@@ -1,6 +1,6 @@
 # Frontend Mentor - Calculator app solution
 
-This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -32,7 +32,6 @@ Users should be able to:
 ![Screenshot for desktop design](./screenshot-img/screenshot-desktop-design.png)
 ![Screenshot for desktop design](./screenshot-img/screenshot-mobile-design.png)
 
-
 ### Links
 
 - Solution URL: [Github](https://github.com/monasr1997/calculator-app-main)
@@ -62,7 +61,3 @@ Users should be able to:
 - Website - [Mohamed Nasr](https://linkedin.com/in/monasr1997)
 - Frontend Mentor - [@monasr1997](https://www.frontendmentor.io/profile/monasr1997)
 - Twitter - [@monasr1997](https://www.twitter.com/monasr1997)
-
-## Acknowledgments
-
-
