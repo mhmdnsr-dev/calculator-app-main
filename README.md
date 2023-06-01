@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/monasr1997/calculator-app-main)
-- Live Site URL: [live site URL](https://eloquent-genie-92877d.netlify.app/)
+- Live Site URL: [live site URL](https://monasr1997.github.io/calculator-app-main//)
 
 ## My process
 
